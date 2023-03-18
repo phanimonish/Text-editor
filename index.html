@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/b6256697eb.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Text-editor</title>
+</head>
+
+<body>
+    <div class="section">
+        <div class="row">
+            <div class="col options">
+                <select id="font-family" class="form-select font" aria-label="Default select example">
+                    <option selected value="arial">Arial</option>
+                    <option value="calibri">Calibri</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select>
+                <hr>
+                <i id="fs-dec" class="fa-sharp fa-solid fa-minus"></i>
+                <input min="1" type="number" id="font-size" class="form-control size" value="14" />
+                <i id="fs-inc" class="fa-sharp fa-solid fa-plus"></i>
+                <hr>
+                <i id="i-bold" class="fa-sharp fa-solid fa-bold"></i>
+                <i id="i-italic" class="fa-sharp fa-solid fa-italic"></i>
+                <i id="i-underline" class="fa-sharp fa-solid fa-underline"></i>
+                <hr>
+                <input id="color" type="color" value="#000000" />
+                <hr>
+                <i id="i-left" class="fa-sharp fa-solid fa-align-left"></i>
+                <i id="i-center" class="fa-sharp fa-solid fa-align-center"></i>
+                <i id="i-right" class="fa-sharp fa-solid fa-align-right"></i>
+                <i id="i-justify" class="fa-sharp fa-solid fa-align-justify"></i>
+                <hr>
+                <div class="dropdown ">
+                    <a class="btn btn-outline-dark bg-light dropdown-toggle more" href="#" role="button"
+                        data-bs-toggle="dropdown">
+                        More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="">
+                    <textarea id="data" class="form-control text-input" placeholder="Type here..." autofocus></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

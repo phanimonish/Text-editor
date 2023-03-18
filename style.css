@@ -1,0 +1,75 @@
+body{
+    background-image: url(bac.jpg);
+    background-size:cover;
+}
+.section{
+    background-color: white;
+    margin-left: 20%;
+    margin-top: 7%;
+    height: 70vh;
+    width: 60vw;
+    border-radius: 10px;
+    /* border: 2px solid grey; */
+    box-shadow: 1px 1px 10px 2px grey;
+}
+.options{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    box-shadow: 0px 0px 5px 2px grey;
+}
+.text-input{
+    height: 450px;
+    margin-top: 20px;
+    border: none;
+    resize: none;
+}
+.text-input:focus{
+    box-shadow: none;
+}
+
+i {
+    margin: 10px;
+}
+
+#data {
+    font-size: 14px;
+}
+.font{
+    width: 20%;
+}
+.font:focus{
+    border-color: grey;
+    box-shadow: none;
+}
+.size{
+    width: 8%;
+}
+.size:focus{
+    border-color: grey;
+    box-shadow: none;
+}
+hr{
+    margin-left: 10px;
+    height: 40px;
+    width: 1px;
+    background-color: grey;
+}
+#color{
+    margin-left: 10px;
+}
+.more{
+    margin-left: 150px;
+}
+.more:hover{
+    background-color:white;
+    color: black;
+}
+.more:focus{
+    background-color:white;
+    color: black;
+}
